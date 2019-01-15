@@ -27,3 +27,7 @@ Neste vídeo eu explico um pouco sobre como funciona o ciclo do TDD: escreve tes
 ### [PyTDDRPG (Aula 3) - Primeira refatoração do código](https://www.youtube.com/watch?v=oBZFp5Lp8Kk)
 
 Eu explico sobre como isolar nossa implentação usando o Bar do Chicão como exemplo: você não sabe como o Chicão faz o lanche e isso não te interessa.
+
+### [PyTDDRPG (Aula 4) - Criando função de causar dano - Parte 1](https://www.youtube.com/watch?v=Hgt89arr_2w)
+
+Neste vídeo faço uma pequena refatoração e crio um novo teste para implementar a função de ataque do personagem.
