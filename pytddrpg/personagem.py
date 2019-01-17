@@ -9,15 +9,13 @@
             Crítico
         Dano = Força - Arre.Cima(Defesa / 2)
 
-
 """
 
 class Personagem():
 
-    def __init__(self, vida = 0, forca = 0, defesa = 0):
-        self.__vida__ = vida
-        self.__forca__ = forca
-        self.__defesa__ = defesa
+    def __init__(self, atributos):
+        self.__vida__ = atributos["vida"]
+        self.__forca__ = atributos["forca"]
 
     def atacar(self):
         return self.__forca__

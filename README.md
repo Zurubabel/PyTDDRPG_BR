@@ -35,3 +35,7 @@ Neste vídeo faço uma pequena refatoração e crio um novo teste para implement
 ### [PyTDDRPG (Aula 5) - Refatoração dos Atributos (Parte 1)](https://www.youtube.com/watch?v=auvyQVGJsJY)
 
 Neste vídeo eu explico quais serão os atributos iniciais que iremos trabalhar (força, defesa e vida) e demonstro como implementar isso no construtor do Personagem
+
+### [PyTDDRPG (Aula 6) - Refatoração dos Atributos (Parte 2) - disponível às 17/01/2019 10:00](https://youtu.be/qIrKzpBvgnE)
+
+Continuando com a refatoração dos construtores do personagem. Agora usaremos um dicionário para setar os atributos, mas lógico que alguns testes explodirão na sua cara (mas esse é o intuito. Hahahaha)
