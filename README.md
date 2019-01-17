@@ -32,6 +32,6 @@ Eu explico sobre como isolar nossa implentação usando o Bar do Chicão como ex
 
 Neste vídeo faço uma pequena refatoração e crio um novo teste para implementar a função de ataque do personagem.
 
-###[PyTDDRPG (Aula 5) - Refatoração dos Atributos (Parte 1)](https://www.youtube.com/watch?v=auvyQVGJsJY)
+### [PyTDDRPG (Aula 5) - Refatoração dos Atributos (Parte 1)](https://www.youtube.com/watch?v=auvyQVGJsJY)
 
 Neste vídeo eu explico quais serão os atributos iniciais que iremos trabalhar (força, defesa e vida) e demonstro como implementar isso no construtor do Personagem
