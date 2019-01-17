@@ -39,3 +39,9 @@ Neste vídeo eu explico quais serão os atributos iniciais que iremos trabalhar 
 ### [PyTDDRPG (Aula 6) - Refatoração dos Atributos (Parte 2) - disponível às 17/01/2019 10:00](https://youtu.be/qIrKzpBvgnE)
 
 Continuando com a refatoração dos construtores do personagem. Agora usaremos um dicionário para setar os atributos, mas lógico que alguns testes explodirão na sua cara (mas esse é o intuito. Hahahaha)
+
+### [PyTDDRPG (Aula 7) - Criando função de causar dano (Parte 2) - disponível às 17/01/2019 20:00](https://youtu.be/5w1v6sTtXXw)
+
+Neste vídeo eu corrijo o problema dos atributos "inconstantes" (tem vida, mas não tem força; tem força, mas não tem vida) e começo a função de cálculo do dano. Lógico que o código quebrou em duas funções e vocês terão que corrigir. Hahahaha
+
+Só começarei a fazer os vídeos mais tarde. Até lá estará com bug.

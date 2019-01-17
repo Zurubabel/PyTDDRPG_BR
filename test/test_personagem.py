@@ -33,7 +33,8 @@ class TestPersonagem(unittest.TestCase):
 
     def test_PersonagemCausaDanoAOutroPersonagem(self):
         atributos = {
-            "vida": 50
+            "vida": 50,
+            "forca": 5
         }
 
         personagemAtacante = Personagem(atributos)
@@ -42,6 +43,22 @@ class TestPersonagem(unittest.TestCase):
         personagemDefensor.receber_dano(personagemAtacante.atacar())
 
         self.assertEqual(personagemDefensor.retornar_vida_restante(), 45)
+
+    def test_PersonagemNaoRecebeDanoSeSuaDefesaForODobroDoAtaqueDoAtacante(self):
+        atributosAtacante = {
+            "forca": 5
+        }
+        personagemAtacante = Personagem(atributosAtacante)
+
+        atributosDefensor = {
+            "vida": 10,
+            "defesa": 10
+        }
+        personagemDefensor = Personagem(atributosDefensor)
+
+        personagemDefensor.receber_dano(personagemAtacante.atacar())
+
+        self.assertEqual(personagemDefensor.retornar_vida_restante(), atributosDefensor["vida"])
 
 if __name__ == "__main__":
     unittest.main()
