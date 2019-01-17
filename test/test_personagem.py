@@ -11,7 +11,7 @@ class TestPersonagem(unittest.TestCase):
         self.assertEqual(personagem.retornar_vida_restante(), 40)
 
     def test_PersonagemCausaDanoAOutroPersonagem(self):
-        personagemAtacante = Personagem(50)
+        personagemAtacante = Personagem(50, 5)
 
         personagemDefensor = Personagem(50)
         personagemDefensor.receber_dano(personagemAtacante.atacar())
