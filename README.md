@@ -53,3 +53,9 @@ Neste vídeo eu começo a refatoração (mais uma vez) dos atributos do nosso Pe
 ### [PyTDDRPG (Aula 9) - Refatorando novamente os atributos do Personagem (Parte 2) - disponível às 18/01/2019 20:00](https://youtu.be/vIatMBrpe-k)
 
 Neste vídeo eu termino a refatoração dos atributos e crio mais um teste: verificar se o personagem estará morto se levar mais dano que sua vida
+
+### [PyTDDRPG (Aula 10) - setUp, tearDown e primeiro problema - disponível às 19/01/2019 20:00](https://youtu.be/Psabui8U_Iw)
+
+Aqui apresento os métodos setUp e tearDown, que são executados antes (setUp) e depois (tearDown) de cada teste e, no meio da brincadeira, surgiu um bug safadinho.
+
+Olha, até resolveria, mas já são 00:55 e tô com um sono lascado. hahahaha

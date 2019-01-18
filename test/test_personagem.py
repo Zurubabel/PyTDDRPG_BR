@@ -4,58 +4,40 @@ from pytddrpg.personagem import Personagem
 
 class TestPersonagem(unittest.TestCase):
 
-    def test_PersonagemRetornaAtributosAtravesDoMetodoRetornarValorAtributo(self):
-        atributos = {
-            "vida": 11,
-            "forca": 12,
-            "defesa": 13
+    def setUp(self):
+        self.atributos = {
+            "vida": 10,
+            "forca": 5,
+            "defesa": 0
         }
-
-        personagem = Personagem(atributos)
-
-        self.assertEqual(personagem.retornar_valor_atributo("vida"), atributos["vida"])
-        self.assertEqual(personagem.retornar_valor_atributo("forca"), atributos["forca"])
-        self.assertEqual(personagem.retornar_valor_atributo("defesa"), atributos["defesa"])
+        self.personagem = Personagem(self.atributos)
 
     def test_PersonagemRecebeAtributoVidaAtravesDeUmDicionario(self):
-        atributos = {
+        atrubutosTeste = {
             "vida": 10
         }
+        personagemTeste = Personagem(atrubutosTeste)
+        self.assertEqual(personagemTeste.retornar_vida_restante(), atrubutosTeste["vida"])
 
-        personagem = Personagem(atributos)
-        self.assertEqual(personagem.retornar_vida_restante(), atributos["vida"])
+    def test_PersonagemRetornaAtributosAtravesDoMetodoRetornarValorAtributo(self):
+        self.assertEqual(self.personagem.retornar_valor_atributo("vida"), self.atributos["vida"])
+        self.assertEqual(self.personagem.retornar_valor_atributo("forca"), self.atributos["forca"])
+        self.assertEqual(self.personagem.retornar_valor_atributo("defesa"), self.atributos["defesa"])
 
     def test_PersonagemRecebeAtributoForcaAtravesDeUmDicionario(self):
-        atributos = {
-            "forca": 10
-        }
-
-        personagem = Personagem(atributos)
-        self.assertEqual(personagem.atacar(), atributos["forca"])
+        self.assertEqual(self.personagem.atacar(), self.atributos["forca"])
 
 
     def test_PersonagemRecebeDanoERetornaAVidaRestanteCalculada(self):
-        atributos = {
-            "vida": 50
-        }
+        self.personagem.set_valor_atributo(50, "vida")
 
-        personagem = Personagem(atributos)
-        personagem.receber_dano(10)
+        self.personagem.receber_dano(10)
 
-        self.assertEqual(personagem.retornar_vida_restante(), 40)
+        self.assertEqual(self.personagem.retornar_vida_restante(), 40)
 
     def test_PersonagemCausaDanoAOutroPersonagem(self):
-        atributos = {
-            "vida": 50,
-            "forca": 5
-        }
-
-        personagemAtacante = Personagem(atributos)
-
-        personagemDefensor = Personagem(atributos)
-        personagemDefensor.receber_dano(personagemAtacante.atacar())
-
-        self.assertEqual(personagemDefensor.retornar_vida_restante(), 45)
+        self.personagem.receber_dano(self.personagem.atacar())
+        self.assertEqual(self.personagem.retornar_vida_restante(), (self.atributos["vida"] - self.atributos["forca"]))
 
     def test_PersonagemNaoRecebeDanoSeSuaDefesaForODobroDoAtaqueDoAtacante(self):
         atributosAtacante = {
