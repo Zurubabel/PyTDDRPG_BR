@@ -4,6 +4,19 @@ from pytddrpg.personagem import Personagem
 
 class TestPersonagem(unittest.TestCase):
 
+    def test_PersonagemRetornaAtributosAtravesDoMetodoRetornarValorAtributo(self):
+        atributos = {
+            "vida": 11,
+            "forca": 12,
+            "defesa": 13
+        }
+
+        personagem = Personagem(atributos)
+
+        self.assertEqual(personagem.retornar_valor_atributo("vida"), atributos["vida"])
+        self.assertEqual(personagem.retornar_valor_atributo("forca"), atributos["forca"])
+        self.assertEqual(personagem.retornar_valor_atributo("defesa"), atributos["defesa"])
+
     def test_PersonagemRecebeAtributoVidaAtravesDeUmDicionario(self):
         atributos = {
             "vida": 10

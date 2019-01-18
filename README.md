@@ -45,3 +45,7 @@ Continuando com a refatoração dos construtores do personagem. Agora usaremos u
 Neste vídeo eu corrijo o problema dos atributos "inconstantes" (tem vida, mas não tem força; tem força, mas não tem vida) e começo a função de cálculo do dano. Lógico que o código quebrou em duas funções e vocês terão que corrigir. Hahahaha
 
 Só começarei a fazer os vídeos mais tarde. Até lá estará com bug.
+
+### [PyTDDRPG (Aula 8) - Refatorando novamente os atributos do Personagem (Parte 1)](https://youtu.be/M88WDBBscx4)
+
+Neste vídeo eu começo a refatoração (mais uma vez) dos atributos do nosso Personagem. Sim, é pau comendo e teste quebrando, mas a vida é assim.
