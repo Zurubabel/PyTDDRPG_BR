@@ -73,5 +73,15 @@ class TestPersonagem(unittest.TestCase):
 
         self.assertEqual(personagemDefensor.retornar_vida_restante(), atributosDefensor["vida"])
 
+    def test_PersonagemConstaraComoMortoSeSuaVidaForMenorOuIgualAZero(self):
+        atributos = {
+            "vida": 10
+        }
+        personagem = Personagem(atributos)
+
+        personagem.receber_dano(11)
+
+        self.assertEqual(personagem.esta_vivo(), False)
+
 if __name__ == "__main__":
     unittest.main()

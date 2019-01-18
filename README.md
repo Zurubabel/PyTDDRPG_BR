@@ -49,3 +49,7 @@ Só começarei a fazer os vídeos mais tarde. Até lá estará com bug.
 ### [PyTDDRPG (Aula 8) - Refatorando novamente os atributos do Personagem (Parte 1)](https://youtu.be/M88WDBBscx4)
 
 Neste vídeo eu começo a refatoração (mais uma vez) dos atributos do nosso Personagem. Sim, é pau comendo e teste quebrando, mas a vida é assim.
+
+### [PyTDDRPG (Aula 9) - Refatorando novamente os atributos do Personagem (Parte 2) - disponível às 18/01/2019 20:00](https://youtu.be/vIatMBrpe-k)
+
+Neste vídeo eu termino a refatoração dos atributos e crio mais um teste: verificar se o personagem estará morto se levar mais dano que sua vida
