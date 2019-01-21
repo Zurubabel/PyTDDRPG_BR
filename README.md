@@ -59,3 +59,7 @@ Neste vídeo eu termino a refatoração dos atributos e crio mais um teste: veri
 Aqui apresento os métodos setUp e tearDown, que são executados antes (setUp) e depois (tearDown) de cada teste e, no meio da brincadeira, surgiu um bug safadinho.
 
 Olha, até resolveria, mas já são 00:55 e tô com um sono lascado. hahahaha
+
+### [PyTDDRPG (Aula 11) - Debugando o teste, variáveis mutáveis e imutáveis e mais um bug](https://youtu.be/abqmiu15dg0)
+
+Neste vídeo eu demonstro como usar o debuger do PyCharm, falo sobre variáveis mutáveis e não mutáveis e deixo mais um bug para vocês resolverem 

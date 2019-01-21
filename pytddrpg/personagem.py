@@ -9,15 +9,13 @@
             Crítico
         Dano = Força - Arre.Cima(Defesa / 2)
 
-
-
-
 """
+from copy import deepcopy
 
 class Personagem():
 
     def __init__(self, atributos):
-       self.__atributos__ = atributos
+       self.__atributos__ = deepcopy(atributos)
 
     def retornar_valor_atributo(self, nome_atributo):
         if nome_atributo in self.__atributos__:
