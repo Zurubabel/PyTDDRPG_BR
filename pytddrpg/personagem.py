@@ -27,10 +27,13 @@ class Personagem():
         return self.retornar_valor_atributo("forca")
 
     def receber_dano(self, dano):
-        self.set_valor_atributo(
-            self.retornar_valor_atributo("vida") - dano - (self.retornar_valor_atributo("defesa") / 2),
-            "vida"
-        )
+        redutorDefesa = self.retornar_valor_atributo("defesa") / 2
+        danoFinal = dano - redutorDefesa
+        if danoFinal > 0:
+            self.set_valor_atributo(
+                self.retornar_valor_atributo("vida") - danoFinal,
+                "vida"
+            )
 
     def esta_vivo(self):
         return self.retornar_valor_atributo("vida") > 0
