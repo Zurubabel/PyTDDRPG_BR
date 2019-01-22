@@ -62,4 +62,8 @@ Olha, até resolveria, mas já são 00:55 e tô com um sono lascado. hahahaha
 
 ### [PyTDDRPG (Aula 11) - Debugando o teste, variáveis mutáveis e imutáveis e mais um bug](https://youtu.be/abqmiu15dg0)
 
-Neste vídeo eu demonstro como usar o debuger do PyCharm, falo sobre variáveis mutáveis e não mutáveis e deixo mais um bug para vocês resolverem 
+Neste vídeo eu demonstro como usar o debuger do PyCharm, falo sobre variáveis mutáveis e não mutáveis e deixo mais um bug para vocês resolverem
+
+### [PyTDDRPG (Aula 12) - Corrigindo o cálculo de receber dano](https://youtu.be/VNjnKLg-Dqw)
+
+Neste vídeo, como diz o título do vídeo, corrijo o cálculo de receber dano do Personagme 
