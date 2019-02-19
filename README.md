@@ -66,4 +66,8 @@ Neste vídeo eu demonstro como usar o debuger do PyCharm, falo sobre variáveis 
 
 ### [PyTDDRPG (Aula 12) - Corrigindo o cálculo de receber dano](https://youtu.be/VNjnKLg-Dqw)
 
-Neste vídeo, como diz o título do vídeo, corrijo o cálculo de receber dano do Personagme 
+Neste vídeo, como diz o título do vídeo, corrijo o cálculo de receber dano do Personagme
+
+### [PyTDDRPG (Aula 13) - Iniciando a arena dos personagens](https://youtu.be/cGYA3r8sjUE)
+
+Neste vídeo eu inicio a construção da classe Arena, que é onde os personagens estarão alocados 
